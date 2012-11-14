@@ -2,14 +2,23 @@
 layout: layout
 title: "Jeff Crow"
 ---
-<div class="content">
-	<div class="related">
-		<ul>
-		{% for post in site.posts %}
-			<li>
-				<span>{{ post.date | date: "%B %e, %Y" }}</span><a href="{{ post.url }}">{{ post.title }}</a>
-			</li>
-		{% endfor %}
-		</ul>
-	</div>
-</div>
+    <div class="main-container">
+        <div class="main wrapper clearfix">
+            {% for post in site.posts %}
+                <article>
+                    <header>
+                        <h2>{{ post.title }}</h2>
+                        <time>{{ post.date | date: "%B %e, %Y" }}</time>
+                    </header>
+                    <section>
+                        <h2>article section h2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+                    </section>
+                </article>
+            {% endfor %}
+            <aside>
+                <h3>about me</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
+            </aside>
+        </div> <!-- #main -->
+    </div> <!-- #main-container -->
