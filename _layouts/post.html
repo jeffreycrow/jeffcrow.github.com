@@ -1,10 +1,10 @@
 ---
 layout: default
 ---
-<article>
+<article class="post">
 	<header>
 		<h2><a href="{{ page.url }}" rel="bookmark" title="Permanent link to ">{{ page.title }}</a></h2>
-		<time datetime="{{ post.date }}">{{ post.date | date: "%B %e, %Y" }}</time>
+		<time>{{ page.date | date: '%B' }} {{ page.date | date: '%e' }}, {{ page.date | date: '%Y' }}</time>
 	</header>
 	<section>{{ content }}</section>
 </article>
