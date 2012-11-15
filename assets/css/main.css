@@ -13,6 +13,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+    color: black;
 }
 
 ::-moz-selection {
@@ -74,22 +75,20 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid #487282;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid #487282;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
 }
 
 .title {
-    color: white;
 }
 
 /* ==============
@@ -110,13 +109,11 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 
-    color: white;
-    background: #e44d26;
+    border: 1px solid black;
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
 }
 
 nav a:hover {
@@ -136,12 +133,9 @@ nav a:hover {
 }
 
 .main aside {
-    color: white;
-    padding: 0px 5% 10px;
 }
 
 .footer-container footer {
-    color: white;
     padding: 20px 0;
 }
 
@@ -157,10 +151,14 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
+   aside section#aboutMe {
+        background: #81A8B8;
+        padding: .3em 2em .3em 2em;
+    }
 
-
-
-
+    #githubActivity {
+        display:none;
+    }
 
 
 
@@ -185,7 +183,8 @@ nav a:hover {
         float: left;
         width: 27%;
         margin: 0 1.7%;
-        padding: 25px 2%;
+        padding-left: 1%;
+        padding-right: 1%;
         margin-bottom: 0;
     }
 
@@ -245,6 +244,10 @@ nav a:hover {
         width: 57%;
     }
 
+    .main article.post {
+        width: 77%;
+    }
+
     .main aside {
         float: right;
         width: 28%;
@@ -258,7 +261,7 @@ nav a:hover {
    =============== */
 
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
+        width: 1126px; /* 1140px - 10% for margins */
         margin: 0 auto;
     }
 }
