@@ -50,7 +50,7 @@ function parseGithubActivity( response ) {
 		} catch(TypeError) {
 			continue;
 		}
-		var item = actorSpan+" "+actionSpan+" repository "+repositoryLink;
+		var item = "<div class='item'>"+actorSpan+" "+actionSpan+" repository "+repositoryLink+"</div>";
 		console.log(item);
 		$(activityContainer).append(item);
 
