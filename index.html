@@ -1,30 +1,24 @@
 ---
-layout: default
 title: "Jeff Crow"
+layout: default
 ---
-            {% for post in site.posts %}
-                <article>
-                    <header>
-                        <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+            <section id="main">
+                {% for post in site.posts %}
+
+                <section role="post">
+                    <header role="title">
+                        <a href="{{ site.url }}{{ post.url }}"><h2 class="post-title">{{ post.title }}</h2></a>
                         <time datetime="{{ post.date | date: "%m-%e-%Y" }}">{{ post.date | date: "%B %e, %Y" }}</time>
                     </header>
-                    <section>
-                    	<p>{{ post.content | strip_html | truncatewords:50 }}</p>
-                    </section>
-                </article>
-            {% endfor %}
+                    {{ post.content }}
+                </section>
+                {% endfor %}
+            </section>
             <aside>
                 <section id="aboutMe">
-                <header>
-                    <h3>about me</h3>
-                </header>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                </section>
-                <section id="githubActivity">
                     <header>
-                        <h3>github activity</h3>
+                        <h3>about me</h3>
                     </header>
-                    <div id="container">
-                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
                 </section>
             </aside>

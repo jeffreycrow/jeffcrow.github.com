@@ -13,7 +13,6 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
-    color: black;
 }
 
 ::-moz-selection {
@@ -75,28 +74,27 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #487282;
+    border-bottom: 20px solid #e44d26;
 }
 
 .footer-container,
 .main aside {
+    border-top: 20px solid #e44d26;
 }
 
 .header-container,
 .footer-container,
 .main aside {
+    background: #f16529;
 }
 
 .title {
+    color: white;
 }
 
 /* ==============
     MOBILE: Menu
    ============== */
-
-nav {
-    font-size:1.5em;
-}
 
 nav ul {
     margin: 0;
@@ -106,21 +104,23 @@ nav ul {
 nav a {
     display: block;
     margin-bottom: 10px;
-    padding: 5px 0;
+    padding: 15px 0;
+
     text-align: center;
     text-decoration: none;
     font-weight: bold;
+
+    color: white;
+    background: #e44d26;
+}
+
+nav a:hover,
+nav a:visited {
+    color: white;
 }
 
 nav a:hover {
-    /* placeholder color */
-    color: green;
-    text-decoration: none;
-}
-
-.title {
-    text-align: center;
-    font-size:3em;
+    text-decoration: underline;
 }
 
 /* ==============
@@ -128,6 +128,7 @@ nav a:hover {
    ============== */
 
 .main {
+    padding: 30px 0;
 }
 
 .main article h1 {
@@ -135,9 +136,12 @@ nav a:hover {
 }
 
 .main aside {
+    color: white;
+    padding: 0px 5% 10px;
 }
 
 .footer-container footer {
+    color: white;
     padding: 20px 0;
 }
 
@@ -153,14 +157,10 @@ nav a:hover {
    Author's custom styles
    ========================================================================== */
 
-   aside section#aboutMe {
-        background: #81A8B8;
-        padding: .3em 2em .3em 2em;
-    }
 
-    #githubActivity {
-        display:none;
-    }
+
+
+
 
 
 
@@ -185,8 +185,7 @@ nav a:hover {
         float: left;
         width: 27%;
         margin: 0 1.7%;
-/*        padding-left: 1%;
-        padding-right: 1%; */
+        padding: 25px 2%;
         margin-bottom: 0;
     }
 
@@ -198,14 +197,6 @@ nav a:hover {
         margin-right: 0;
     }
 
-    .title {
-        text-align:center;
-    }
-
-    .header-container .wrapper {
-        margin: 0;
-        width:100%;
-    }
 /* ========================
     INTERMEDIATE: IE Fixes
    ======================== */
@@ -240,48 +231,10 @@ nav a:hover {
         float: left;
     }
 
-    .header-container .wrapper {
-        margin: 0 5% 0 5%;
-    }
-
     nav {
         float: right;
-        width: 58%;
-        font-size: 1.5em;
-        padding-top:1em;
-        margin-top:.5em;
+        width: 38%;
     }
-
-    nav i {
-        font-size:1.3em;
-        vertical-align: top;
-    }
-
-    nav a {
-        padding-top:0;
-        position: relative;
-        width:auto;
-  -moz-transition-property: padding-top;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-property: padding-top;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-property: font-size;
-  -o-transition-duration: 0.3s;
-
-    }
-
-    nav a:hover {
-        /* color is a placeholder */
-        color: green;
-        text-decoration:none;
-  -moz-transition-property: padding-top;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-property: padding-top;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-property: font-size;
-  -o-transition-duration: 0.3s;
-  padding-top:.2em;
-}
 
 /* ============
     WIDE: Main
@@ -290,10 +243,6 @@ nav a:hover {
     .main article {
         float: left;
         width: 57%;
-    }
-
-    .main article.post {
-        width: 77%;
     }
 
     .main aside {
@@ -309,7 +258,7 @@ nav a:hover {
    =============== */
 
     .wrapper {
-        width: 1126px; /* 1140px - 10% for margins */
+        width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
     }
 }

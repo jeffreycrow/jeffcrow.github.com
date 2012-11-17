@@ -1,0 +1,508 @@
+/*
+	LESS file for jeffreycrow.com
+	Jeff Crow - jeff@jeffreycrow.com
+
+	Based on Frameless <http://framelessgrid.com/>
+
+	Licensed under CC-BY 3.0
+	<http://creativecommons.org/licenses/by/3.0/>
+*/
+
+
+/*
+	Configuration
+*/
+
+@font-size: 17; 		// Your base font-size in pixels
+@line: 24;
+@em: @font-size*1em;	// Shorthand for outputting ems, e.g. "12/@em"
+
+@column: 36;	// The column-width of your grid in pixels
+@gutter: 24;	// The gutter-width of your grid in pixels
+
+@textColor: #333;
+@lightTextColor: #999;
+@linkColor: #158AD0;
+@linkHoverColor: #1CBAF4;
+
+
+/*
+	Column-widths in variables, in ems
+*/
+
+ @1cols: ( 1 * (@column + @gutter) - @gutter) / @em; @1col: @1cols;
+ @2cols: ( 2 * (@column + @gutter) - @gutter) / @em;
+ @3cols: ( 3 * (@column + @gutter) - @gutter) / @em;
+ @4cols: ( 4 * (@column + @gutter) - @gutter) / @em;
+ @5cols: ( 5 * (@column + @gutter) - @gutter) / @em;
+ @6cols: ( 6 * (@column + @gutter) - @gutter) / @em;
+ @7cols: ( 7 * (@column + @gutter) - @gutter) / @em;
+ @8cols: ( 8 * (@column + @gutter) - @gutter) / @em;
+ @9cols: ( 9 * (@column + @gutter) - @gutter) / @em;
+@10cols: (10 * (@column + @gutter) - @gutter) / @em;
+@11cols: (11 * (@column + @gutter) - @gutter) / @em;
+@12cols: (12 * (@column + @gutter) - @gutter) / @em;
+@13cols: (13 * (@column + @gutter) - @gutter) / @em;
+@14cols: (14 * (@column + @gutter) - @gutter) / @em;
+@15cols: (15 * (@column + @gutter) - @gutter) / @em;
+@16cols: (16 * (@column + @gutter) - @gutter) / @em;
+@18cols: (18 * (@column + @gutter) - @gutter) / @em;
+
+
+/*
+	Column-widths in a function, in ems
+*/
+
+.width (@cols:1) {
+	width: (@cols * (@column + @gutter) - @gutter) / @em;
+}
+
+/* Reset styles */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-weight: inherit;
+	font-style: normal;
+	vertical-align: baseline;
+	background: transparent;
+	border: 0;
+	outline: 0;
+}
+
+/* HTML5 Resets */
+article, aside, figure, figure img, hgroup, footer, header, nav, section {
+	display: block;
+}
+
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+input, select { vertical-align: middle; }
+a img { border: 0; }
+:focus { outline: 0; }
+a:hover, a:active { outline: none; }
+
+
+/* 
+	Default Layout
+*/
+
+body {
+	width: @18cols;
+	margin: 0 auto;
+	padding: @2cols @1cols 0;
+	line-height: 1;
+	color: @textColor;
+	background: #FFF;
+	font-family: ff-tisa-web-pro, Georgia, sans-serif;
+	-webkit-text-size-adjust: 100%;
+}
+
+a, a:visited {
+	color: @linkColor;
+	text-decoration:none;
+	-webkit-transition: all 0.09s ease-out;
+	-moz-transition: all 0.09s ease-out;
+	-ms-transition: all 0.09s ease-out;
+	transition: all 0.09s ease-out;
+}
+
+a:hover {
+	color: @linkHoverColor;
+}
+
+section#main {
+	float: left;
+	width: @9cols;
+}
+
+header[role='title'] {
+	margin-bottom:(@1cols/2);
+}
+
+section[role='post'] {
+}
+
+.main-container {
+	float:right;
+	width: @14cols;
+	margin-top:@2cols;
+	margin-bottom:@2cols;
+
+}
+
+header#nav {
+	float: left;
+	width: @4cols;
+}
+
+nav.main {
+	font-size: 26/@em;
+
+	li {
+		margin-bottom:(@1cols/5);
+	}
+
+
+	i {
+		font-size: 160%;
+		vertical-align:middle;
+	}
+
+	a:hover {
+		-webkit-transform: scale(1.15);
+		-moz-transform: scale(1.15);
+		-ms-transform: scale(1.15);
+		transform: scale(1.15);
+	}
+
+	i {
+		color: #333333;
+	}
+}
+
+h1.title {
+	font-size: 48/@em;
+	text-align:center;
+	margin-bottom: (@1cols/3);
+
+	a {
+		text-decoration:none;
+		color: @textColor;
+	}
+
+	a:hover {
+		text-decoration:underline;
+	}
+}
+
+h2.post-title {
+	font-size: 34/@em;
+}
+
+header[role='page'] {
+	margin-bottom: @1cols;	
+}
+
+aside {
+	float: right;
+	width: @4cols;
+
+	section {
+		margin-bottom: @1cols;
+
+		header {
+			font-size: 34/@em;
+		}
+	}
+}
+
+footer {
+	clear: both;
+	border-top: 2px solid #E5E5E5;
+	padding-bottom:@2cols;
+}
+
+div.madeWith {
+	width:47%;
+	float:left;
+	margin-top:(@1cols/3);
+	font-size:14/@em;
+	color: @lightTextColor;
+
+	p {
+		font-style:italic;
+	}
+
+	div.cc-icons {
+		display:none;
+		float:left;
+		margin-left:(@1cols/2);
+		margin-right:(@1cols/2);
+
+		img {
+			width: 100%;
+		}
+
+		div {
+			width: @1cols;
+			display:inline-block;
+		}
+	}
+
+}
+
+div.social {
+	font-size: 40/@em;
+	margin-top:(@1cols/10);
+	width:47%;
+	float:right;
+	text-align:right;
+	padding-right:(@1cols/5);
+
+	a {
+		text-decoration:none;
+		margin-right:(@1cols/10);
+		color: @lightTextColor;
+	}
+
+	a:hover {
+		color:#333;
+  		-webkit-transition: all 0.2s ease-out;
+		-moz-transition: all 0.2s ease-out;
+		-ms-transition: all 0.2s ease-out;
+		transition: all 0.2s ease-out;
+	}
+}
+
+/* End Default Layout */
+
+/*
+	Consistency fixes
+	adopted from http://necolas.github.com/normalize.css/
+*/
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, nav, section, audio, canvas, video {
+	display: block;
+}
+
+html {
+	height: 100%; 
+	-webkit-text-size-adjust: 100%; 
+	-ms-text-size-adjust: 100%;
+}
+
+	body {/*min-height: 100%;*/ font-size: 100%;}
+
+sub, sup {
+	font-size: 75%; 
+	line-height: 0; 
+	position: relative; 
+	vertical-align: baseline;
+}
+
+	sup {top: -0.5em;}
+	sub {bottom: -0.25em;}
+
+pre {
+	white-space: pre; 
+	white-space: pre-wrap; 
+	word-wrap: break-word;
+}
+
+b, strong {font-weight: bold;}
+abbr[title] {border-bottom: 1px dotted;}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a img, img {
+	-ms-interpolation-mode: bicubic;
+	border: 0;
+}
+
+input, textarea, button, select {
+	margin: 0;
+	font-size: 100%;
+	line-height: normal;
+	vertical-align: baseline;
+}
+
+	button,
+	html input[type="button"], 
+	input[type="reset"], 
+	input[type="submit"] {
+	    cursor: pointer;
+	    -webkit-appearance: button;
+	}
+	
+	input[type="checkbox"],
+	input[type="radio"] {
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+			 -o-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+				box-sizing: border-box;
+	}
+	
+	textarea {overflow: auto;}
+
+
+/*
+	These are easy to forget
+*/
+
+::selection {
+	background: red;
+	color: white;
+}
+::-moz-selection {
+	background: red;
+	color: white;
+}
+
+img::selection {
+	background: transparent;
+}
+img::-moz-selection {
+	background: transparent;
+}
+
+body {
+	-webkit-tap-highlight-color: rgba(255,0,0, 0.62);
+}
+
+/*		
+	Tablet Layout: 768px.
+	Inherits styles from: Default Layout.
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	body {
+		width:@14cols;
+		padding-top:@1cols;
+	}
+
+	header#nav {
+		width:100%;
+		margin-bottom:@1cols;
+
+		ul {
+			text-align:center;
+		}
+
+		li {
+			display:inline-block;
+			margin-left:1em;
+			margin-right:1em;
+		}
+	}
+
+	.main-container {
+		width: @14cols !important;
+		margin-top:0;
+	}
+
+	section#main {
+		width:@10cols;
+	}
+}
+
+/*
+	Mobile Layout: 320px.
+	Inherits styles from: Default Layout.
+*/
+@media only screen and (max-width: 767px) {
+
+	body {
+		width: @7cols;
+		padding:0;
+	}
+
+	div.main-container {
+		width:100%;
+		margin-bottom:@1cols;
+	}
+
+	section#main {
+		width: 100%;
+	}
+
+	section[role='post'] {
+		margin-bottom:@2cols;
+	}
+
+	header#nav {
+		width:100%;
+	}
+
+	h1.title {
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:(@1cols/3);
+	}
+
+	nav.main {
+		text-align:center;
+	}
+
+	aside {
+		float:none;
+		width:100%;
+	}
+
+	div.madeWith {
+		div.cc-icons {
+			display:block;
+		}
+
+		p#license {
+			display:none;
+		}
+	}
+}
+
+/*
+	Wide Mobile Layout: 480px.
+	Inherits styles from: Default Layout, Mobile Layout.
+*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	body {
+		width: @10cols;
+	}
+
+	header#nav {
+		width:100%;
+		margin-bottom:@1cols;
+
+		ul {
+			text-align:center;
+		}
+
+		li {
+			display:inline-block;
+			margin-left:1em;
+			margin-right:1em;
+		}
+	}
+
+	.main-container {
+		width: 100%;
+		margin-top:0;
+	}
+
+	section#main {
+		width:100%;
+	}
+
+	aside {
+		float:left;
+		width:100%;
+	}
+
+	div.madeWith {
+		div.cc-icons {
+			display:none !important;
+		}
+
+		p#license {
+			display:block !important;
+		}
+	}
+}
