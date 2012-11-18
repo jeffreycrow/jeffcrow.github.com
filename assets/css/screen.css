@@ -1,2 +1,547 @@
-/* un-minified LESS file can be found in github repo */
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;font-size:100%;font-weight:inherit;font-style:normal;vertical-align:baseline;background:transparent;border:0;outline:0}article,aside,figure,figure img,hgroup,footer,header,nav,section{display:block}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}input,select{vertical-align:middle}a img{border:0}:focus{outline:0}a:hover,a:active{outline:0}body{width:62.11764705882353em;margin:0 auto;padding:5.647058823529412em 2.1176470588235294em 0;line-height:1;color:#333;background:#FFF;font-family:ff-tisa-web-pro,Georgia,sans-serif;-webkit-text-size-adjust:100%}a,a:visited{color:#158ad0;text-decoration:none;-webkit-transition:all .09s ease-out;-moz-transition:all .09s ease-out;-ms-transition:all .09s ease-out;transition:all .09s ease-out}a:hover{color:#1cbaf4}section#main{float:left;width:30.352941176470587em}header[role='title']{margin-bottom:1.0588235294117647em}.main-container{float:right;width:48em;margin-top:5.647058823529412em;margin-bottom:5.647058823529412em}header#nav{float:left;width:12.705882352941176em}nav.main{font-size:1.5294117647058822em}nav.main li{margin-bottom:.4235294117647059em}nav.main i{font-size:160%;vertical-align:middle}nav.main a:hover{-webkit-transform:scale(1.15);-moz-transform:scale(1.15);-ms-transform:scale(1.15);transform:scale(1.15)}nav.main i{color:#333}h1.title{font-size:2.823529411764706em;text-align:center;margin-bottom:.7058823529411765em}h1.title a{text-decoration:none;color:#333}h1.title a:hover{text-decoration:underline}h2.post-title{font-size:2em}header[role='page']{margin-bottom:2.1176470588235294em}aside{float:right;width:12.705882352941176em}aside section{margin-bottom:2.1176470588235294em}aside section header{font-size:2em}footer{clear:both;border-top:2px solid #e5e5e5;padding-bottom:5.647058823529412em}div.madeWith{width:47%;float:left;margin-top:.7058823529411765em;font-size:.8235294117647058em;color:#999}div.madeWith p{font-style:italic}div.madeWith div.cc-icons{display:none;float:left;margin-left:1.0588235294117647em;margin-right:1.0588235294117647em}div.madeWith div.cc-icons img{width:100%}div.madeWith div.cc-icons div{width:2.1176470588235294em;display:inline-block}div.social{font-size:2.3529411764705883em;margin-top:.21176470588235294em;width:47%;float:right;text-align:right;padding-right:.4235294117647059em}div.social a{text-decoration:none;margin-right:.21176470588235294em;color:#999}div.social a:hover{color:#333;-webkit-transition:all .2s ease-out;-moz-transition:all .2s ease-out;-ms-transition:all .2s ease-out;transition:all .2s ease-out}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,audio,canvas,video{display:block}html{height:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{font-size:100%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}b,strong{font-weight:bold}abbr[title]{border-bottom:1px dotted}table{border-collapse:collapse;border-spacing:0}a img,img{-ms-interpolation-mode:bicubic;border:0}input,textarea,button,select{margin:0;font-size:100%;line-height:normal;vertical-align:baseline}button,html input[type="button"],input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box}textarea{overflow:auto}::selection{background:red;color:white}::-moz-selection{background:red;color:white}img::selection{background:transparent}img::-moz-selection{background:transparent}body{-webkit-tap-highlight-color:rgba(255,0,0,0.62)}@media only screen and (min-width:768px) and (max-width:991px){body{width:48em;padding-top:2.1176470588235294em}header#nav{width:100%;margin-bottom:2.1176470588235294em}header#nav ul{text-align:center}header#nav li{display:inline-block;margin-left:1em;margin-right:1em}.main-container{width:48em!important;margin-top:0}section#main{width:33.88235294117647em}}@media only screen and (max-width:767px){body{width:23.294117647058822em;padding:0}div.main-container{width:100%;margin-bottom:2.1176470588235294em}section#main{width:100%}section[role='post']{margin-bottom:5.647058823529412em}header#nav{width:100%}h1.title{margin-left:auto;margin-right:auto;margin-top:.7058823529411765em}nav.main{text-align:center}aside{float:none;width:100%}div.madeWith div.cc-icons{display:block}div.madeWith p#license{display:none}}@media only screen and (min-width:480px) and (max-width:767px){body{width:33.88235294117647em}header#nav{width:100%;margin-bottom:2.1176470588235294em}header#nav ul{text-align:center}header#nav li{display:inline-block;margin-left:1em;margin-right:1em}.main-container{width:100%;margin-top:0}section#main{width:100%}aside{float:left;width:100%}div.madeWith div.cc-icons{display:none!important}div.madeWith p#license{display:block!important}}
+/*
+	LESS file for jeffreycrow.com
+	Jeff Crow - jeff@jeffreycrow.com
+
+	Based on Frameless <http://framelessgrid.com/>
+
+	Licensed under CC-BY 3.0
+	<http://creativecommons.org/licenses/by/3.0/>
+*/
+/*
+	Configuration
+*/
+/*
+	Column-widths in variables, in ems
+*/
+/*
+	Column-widths in a function, in ems
+*/
+/* Reset styles */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: normal;
+  vertical-align: baseline;
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+/* HTML5 Resets */
+article,
+aside,
+figure,
+figure img,
+hgroup,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+a:hover,
+a:active {
+  outline: none;
+}
+/* 
+	Default Layout
+*/
+body {
+  width: 62.11764705882353em;
+  margin: 0 auto;
+  padding: 5.647058823529412em 2.1176470588235294em 0;
+  line-height: 1;
+  color: #333333;
+  background: #FFF;
+  font-family: ff-tisa-web-pro, Georgia, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+a,
+a:visited {
+  color: #158ad0;
+  text-decoration: none;
+  -webkit-transition: all 0.09s ease-out;
+  -moz-transition: all 0.09s ease-out;
+  -ms-transition: all 0.09s ease-out;
+  transition: all 0.09s ease-out;
+}
+a:hover {
+  color: #1cbaf4;
+}
+section#main {
+  float: left;
+  width: 30.352941176470587em;
+  margin-bottom: 2.1176470588235294em;
+}
+header[role='title'] {
+  margin-bottom: 1.0588235294117647em;
+}
+section.page {
+  /*	margin-left:(@1cols/2); */
+
+}
+section[role='post'] {
+  margin-bottom: 2.1176470588235294em;
+}
+section[role='single-post'] {
+  margin-bottom: 2.1176470588235294em;
+}
+.main-container {
+  float: right;
+  width: 48em;
+}
+.main-container.index {
+  margin-top: 5.647058823529412em;
+}
+.main-container.post {
+  margin-bottom: 2.1176470588235294em;
+}
+.main-container.page {
+  margin-bottom: 0;
+}
+header#nav {
+  float: left;
+  width: 12.705882352941176em;
+}
+nav.main {
+  font-size: 1.5294117647058822em;
+}
+nav.main li {
+  margin-bottom: 0.4235294117647059em;
+}
+nav.main i {
+  font-size: 160%;
+  vertical-align: middle;
+}
+nav.main a:hover {
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  transform: scale(1.15);
+}
+nav.main i {
+  color: #333333;
+}
+h1.title {
+  font-size: 2.823529411764706em;
+  text-align: center;
+  margin-bottom: 0.7058823529411765em;
+}
+h1.title a {
+  text-decoration: none;
+  color: #333333;
+}
+h1.title a:hover {
+  text-decoration: underline;
+}
+h1.page-title {
+  font-size: 2.823529411764706em;
+  text-align: left;
+  border-left: 0.1323529411764706em solid #e5e5e5;
+  padding-left: 0.35294117647058826em;
+  /*	margin-left:(@1cols/6); */
+
+}
+h2.post-title {
+  font-size: 2em;
+}
+header[role='page'] {
+  margin-bottom: 2.1176470588235294em;
+}
+aside {
+  float: right;
+  width: 12.705882352941176em;
+}
+aside section {
+  margin-bottom: 2.1176470588235294em;
+}
+aside section header {
+  font-size: 2em;
+}
+footer {
+  clear: both;
+  border-top: 2px solid #e5e5e5;
+  padding-bottom: 5.647058823529412em;
+}
+div.madeWith {
+  width: 47%;
+  float: left;
+  margin-top: 0.7058823529411765em;
+  font-size: 0.8235294117647058em;
+  color: #999999;
+}
+div.madeWith p {
+  font-style: italic;
+}
+div.madeWith div.cc-icons {
+  display: none;
+  float: left;
+  margin-left: 1.0588235294117647em;
+  margin-right: 1.0588235294117647em;
+}
+div.madeWith div.cc-icons img {
+  width: 100%;
+}
+div.madeWith div.cc-icons div {
+  width: 2.1176470588235294em;
+  display: inline-block;
+}
+div.social {
+  font-size: 2.3529411764705883em;
+  margin-top: 0.21176470588235294em;
+  width: 47%;
+  float: right;
+  text-align: right;
+  padding-right: 0.4235294117647059em;
+}
+div.social a {
+  text-decoration: none;
+  margin-right: 0.21176470588235294em;
+  color: #999999;
+}
+div.social a:hover {
+  color: #333;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+/* End Default Layout */
+/*
+	Consistency fixes
+	adopted from http://necolas.github.com/normalize.css/
+*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+audio,
+canvas,
+video {
+  display: block;
+}
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  /*min-height: 100%;*/
+  font-size: 100%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+b,
+strong {
+  font-weight: bold;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a img,
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+}
+input,
+textarea,
+button,
+select {
+  margin: 0;
+  font-size: 100%;
+  line-height: normal;
+  vertical-align: baseline;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+textarea {
+  overflow: auto;
+}
+/*
+	These are easy to forget
+*/
+::selection {
+  background: red;
+  color: white;
+}
+::-moz-selection {
+  background: red;
+  color: white;
+}
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
+}
+body {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0.62);
+}
+/*		
+	Tablet Layout: 768px.
+	Inherits styles from: Default Layout.
+*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    width: 48em;
+    padding-top: 2.1176470588235294em;
+  }
+  header#nav {
+    width: 100%;
+    margin-bottom: 2.1176470588235294em;
+  }
+  header#nav ul {
+    text-align: center;
+  }
+  header#nav li {
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .main-container {
+    width: 48em !important;
+    margin-top: 0;
+  }
+  .main-container.index {
+    margin-top: 0;
+  }
+  h1.page-title {
+    border: none;
+    padding-left: 0;
+  }
+  section#main {
+    width: 33.88235294117647em;
+  }
+}
+/*
+	Mobile Layout: 320px.
+	Inherits styles from: Default Layout.
+*/
+@media only screen and (max-width: 767px) {
+  body {
+    width: 23.294117647058822em;
+    padding: 0;
+  }
+  div.main-container {
+    width: 100%;
+    margin-bottom: 2.1176470588235294em;
+  }
+  .main-container.index {
+    margin-top: 2.1176470588235294em;
+  }
+  section#main {
+    width: 100%;
+  }
+  section[role='post'] {
+    margin-bottom: 2.1176470588235294em;
+  }
+  header#nav {
+    width: 100%;
+  }
+  header[role='title'] {
+    margin-top: 1.0588235294117647em;
+  }
+  h1.title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.7058823529411765em;
+  }
+  h1.page-title {
+    border: none;
+    padding-left: 0;
+  }
+  nav.main {
+    text-align: center;
+  }
+  aside {
+    float: none;
+    width: 100%;
+  }
+  div.madeWith div.cc-icons {
+    display: block;
+  }
+  div.madeWith p#license {
+    display: none;
+  }
+}
+/*
+	Wide Mobile Layout: 480px.
+	Inherits styles from: Default Layout, Mobile Layout.
+*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  body {
+    width: 33.88235294117647em;
+  }
+  header#nav {
+    width: 100%;
+    margin-bottom: 2.1176470588235294em;
+  }
+  header#nav ul {
+    text-align: center;
+  }
+  header#nav li {
+    display: inline-block;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .main-container {
+    width: 100%;
+    margin-top: 0;
+  }
+  .main-container.index {
+    margin-top: 0;
+  }
+  header[role='title'] {
+    margin-top: 0;
+  }
+  section#main {
+    width: 100%;
+  }
+  aside {
+    float: left;
+    width: 100%;
+  }
+  div.madeWith div.cc-icons {
+    display: none !important;
+  }
+  div.madeWith p#license {
+    display: block !important;
+  }
+}
