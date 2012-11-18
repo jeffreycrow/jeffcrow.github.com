@@ -446,7 +446,7 @@ body {
 @media only screen and (max-width: 767px) {
 
 	body {
-		width: @7cols;
+		width: @6cols;
 		padding:0;
 	}
 
@@ -484,6 +484,8 @@ body {
 	h1.page-title {
 		border:none;
 		padding-left:0;
+		font-size:30/@em;
+		text-align:center;
 	}
 
 	nav.main {
@@ -496,13 +498,19 @@ body {
 	}
 
 	div.madeWith {
+		width:auto;
+
 		div.cc-icons {
 			display:block;
 		}
 
-		p#license {
+		p#license, p#madeWith {
 			display:none;
 		}
+	}
+
+	div.social {
+		width:auto;
 	}
 }
 
