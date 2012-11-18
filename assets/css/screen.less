@@ -99,7 +99,7 @@ a:hover, a:active { outline: none; }
 */
 
 body {
-	width: @18cols;
+	width: @16cols;
 	margin: 0 auto;
 	padding: @2cols @1cols 0;
 	line-height: 1;
@@ -124,7 +124,7 @@ a:hover {
 
 section#main {
 	float: left;
-	width: @9cols;
+	width: @8cols;
 	margin-bottom:@1cols;
 }
 
@@ -146,11 +146,11 @@ section[role='single-post'] {
 
 .main-container {
 	float:right;
-	width: @14cols;
+	width: @12cols;
 }
 
-.main-container.index {
-	margin-top:@2cols;
+.main-container.index, .main-container.post {
+	margin-top:(@2cols - (@1cols/4));
 }
 
 .main-container.post {
@@ -215,7 +215,7 @@ h1.page-title {
 }
 
 h2.post-title {
-	font-size: 34/@em;
+	font-size: 28/@em;
 }
 
 header[role='page'] {
@@ -453,10 +453,10 @@ body {
 	div.main-container {
 		width:100%;
 		margin-bottom:@1cols;
+		margin-top:@1cols;
 	}
 
 	.main-container.index {
-		margin-top:@1cols;
 	}
 
 	section#main {
