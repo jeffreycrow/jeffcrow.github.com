@@ -124,8 +124,15 @@ a:hover {
 
 section#main {
 	float: left;
-	width: @8cols;
 	margin-bottom:@1cols;
+}
+
+section#main.index {
+	width:@8cols;	
+}
+
+section#main.page {
+	width: @11cols;	
 }
 
 header[role='title'] {
@@ -133,7 +140,7 @@ header[role='title'] {
 }
 
 section.page {
-/*	margin-left:(@1cols/2); */
+	text-align:justify;
 }
 
 section[role='post'] {
@@ -210,7 +217,7 @@ h1.page-title {
 	font-size: 48/@em;
 	text-align:left;
 	border-left: (@1cols/16) solid @dividerColor;
-	padding-left:(@1cols/6);
+	padding-left:(@1cols/4);
 /*	margin-left:(@1cols/6); */
 }
 
@@ -472,11 +479,12 @@ body {
 	}
 
 	section#main {
-		width: 100%;
+		width: 100% !important;
 	}
 
 	section[role='post'] {
 		margin-bottom:@1cols;
+		text-align:justify;
 	}
 
 	header#nav {
@@ -569,10 +577,6 @@ body {
 
 	header[role='title'] {
 		margin-top:0;
-	}
-
-	section#main {
-		width:100%;
 	}
 
 	aside {
