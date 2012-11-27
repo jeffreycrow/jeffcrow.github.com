@@ -68,7 +68,7 @@ JSONP( 'https://github.com/jeffcrow.json?callback=?', function( response ) {
 
 function gText(e) {
     t = (document.all) ? document.selection.createRange().text : document.getSelection();
-    console.log("selection: " + t);
+    alert("selection: " + t);
 }
 
 
