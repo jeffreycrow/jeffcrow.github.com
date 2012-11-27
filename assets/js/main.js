@@ -51,8 +51,7 @@ function parseGithubActivity( response ) {
 			continue;
 		}
 		var item = "<div class='item'>"+actorSpan+" "+actionSpan+" repository "+repositoryLink+"</div>";
-		console.log(item);
-		$(activityContainer).append(item);
+//		$(activityContainer).append(item);
 
 		successFlag = true;
 
@@ -64,5 +63,18 @@ function parseGithubActivity( response ) {
 }
 
 JSONP( 'https://github.com/jeffcrow.json?callback=?', function( response ) {
-	parseGithubActivity(response);
+	//parseGithubActivity(response);
 });
+
+function gText(e) {
+    t = (document.all) ? document.selection.createRange().text : document.getSelection();
+    console.log("selection: " + t);
+}
+
+
+	var t = '';
+
+	document.onmouseup = gText;
+	if (!document.all) {
+		document.captureEvents(Event.MOUSEUP);
+	}

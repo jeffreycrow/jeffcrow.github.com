@@ -198,6 +198,8 @@ nav.main {
 	}
 }
 
+/* Typography */
+
 h1.title {
 	font-size: 48/@em;
 	text-align:center;
@@ -218,12 +220,26 @@ h1.page-title {
 	text-align:left;
 	border-left: (@1cols/16) solid @dividerColor;
 	padding-left:(@1cols/4);
-/*	margin-left:(@1cols/6); */
 }
 
+/*
 h2.post-title {
 	font-size: 28/@em;
 }
+*/
+
+h2 {
+	font-size: 28/@em;	
+}
+
+h2.vitae {
+	margin-bottom: (@1cols/4);
+}
+
+h3 {
+	font-size: 20/@em;
+}
+/* End Typography */
 
 header[role='page'] {
 	margin-bottom: @1cols;	
@@ -242,6 +258,61 @@ aside {
 	}
 }
 
+/* Vitae */
+
+section.vitae {
+	margin-top:(@1cols);
+}
+
+section.vitae-item {
+	margin-bottom:(@1cols);
+}
+
+div.vitae.item {
+	border-left: (@1cols/6) solid @dividerColor;
+/*	margin-left: (@1cols/6); */
+	padding-left: (@1cols/3);
+	margin-bottom:(@1cols - (@1cols/4));
+
+	div.element.h3 {
+		margin-bottom:(@1cols/6);
+	}
+
+	div.element.position {
+		margin-bottom:(@1cols/4);
+	}
+}
+
+h3.vitae, p.position {
+	display:inline;
+}
+
+h3.vitae {
+	margin-bottom:(@1cols/4);
+}
+
+p.description {
+	font-size:14/@em;
+	line-height:(@1cols - (@1cols/3));
+}
+
+span.location, span.date {
+	font-size:12/@em;
+	vertical-align:10%;
+	padding-left:(@1cols/4);
+}
+
+p.area {
+	margin-bottom:(@1cols/8);
+}
+
+span.area.description {
+	font-size:(14/@em);
+}
+
+/* End Vitae */
+
+/* Footer */
 footer {
 	clear: both;
 	border-top: 2px solid @dividerColor;
@@ -299,6 +370,7 @@ div.social {
 		transition: all 0.2s ease-out;
 	}
 }
+/* End Footer */
 
 /* End Default Layout */
 
