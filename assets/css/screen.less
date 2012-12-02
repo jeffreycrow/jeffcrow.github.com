@@ -168,7 +168,7 @@ section[role='single-post'] {
 	margin-bottom:0;
 }
 
-header#nav {
+div.nav {
 	float: left;
 	width: @4cols;
 }
@@ -222,12 +222,6 @@ h1.page-title {
 	padding-left:(@1cols/4);
 }
 
-/*
-h2.post-title {
-	font-size: 28/@em;
-}
-*/
-
 h2 {
 	font-size: 28/@em;	
 }
@@ -268,9 +262,11 @@ section.vitae-item {
 	margin-bottom:(@1cols);
 }
 
-div.vitae.item {
+div.vitae.block {
 	border-left: (@1cols/6) solid @dividerColor;
-/*	margin-left: (@1cols/6); */
+}
+
+div.vitae.item {
 	padding-left: (@1cols/3);
 	margin-bottom:(@1cols - (@1cols/4));
 
@@ -289,6 +285,16 @@ h3.vitae, p.position {
 
 h3.vitae {
 	margin-bottom:(@1cols/4);
+}
+
+section.vitae#awards, section.vitae#service {
+	.element {
+		margin-bottom:.3em;
+	}
+
+	h3 {
+		font-size:.9em;
+	}
 }
 
 p.description {
@@ -484,7 +490,7 @@ body {
 		padding-top:@1cols;
 	}
 
-	header#nav {
+	div.nav {
 		width:100%;
 		margin-bottom:@1cols;
 
@@ -559,7 +565,7 @@ body {
 		text-align:justify;
 	}
 
-	header#nav {
+	div.nav {
 		width:100%;
 	}
 
@@ -578,6 +584,19 @@ body {
 		padding-left:0;
 		font-size:30/@em;
 		text-align:center;
+	}
+
+
+	h2 {
+		font-size:24/@em;
+	}
+
+	h3 {
+		font-size:18/@em;
+	}
+
+	p.position {
+		font-size:14/@em;
 	}
 
 	nav.main {
@@ -623,7 +642,7 @@ body {
 		width: @10cols;
 	}
 
-	header#nav {
+	div.nav {
 		width:100%;
 		margin-bottom:@1cols;
 
@@ -661,7 +680,7 @@ body {
 			display:none !important;
 		}
 
-		p#license {
+		p#license, p#madeWith {
 			display:block !important;
 		}
 	}

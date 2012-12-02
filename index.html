@@ -1,21 +1,19 @@
 ---
-title: "Jeff Crow"
 layout: default
 ---
         <div class="main-container index">
             <section id="main" class="index">
                 {% for post in site.categories.posts %}
-
-                <section role="post">
-                    <header role="title">
+                <article itemscope itemtype="http://schema.org/BlogPosting">
+                    <header>
                         <a href="{{ site.url }}{{ post.url }}"><h2 class="post-title">{{ post.title }}</h2></a>
                         <time datetime="{{ post.date | date: "%m-%e-%Y" }}">{{ post.date | date: "%B %e, %Y" }}</time>
                     </header>
                     {{ post.content }}
-                </section>
+                </article>
                 {% endfor %}
             </section>
-            <aside>
+            <aside itemscope itemtype="http://schema.org/WPSideBar">
                 <section id="aboutMe">
                     <header>
                         <h3>about me</h3>

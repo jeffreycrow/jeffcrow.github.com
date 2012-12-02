@@ -65,16 +65,3 @@ function parseGithubActivity( response ) {
 JSONP( 'https://github.com/jeffcrow.json?callback=?', function( response ) {
 	//parseGithubActivity(response);
 });
-
-function gText(e) {
-    t = (document.all) ? document.selection.createRange().text : document.getSelection();
-    alert("selection: " + t);
-}
-
-
-	var t = '';
-
-	document.onmouseup = gText;
-	if (!document.all) {
-		document.captureEvents(Event.MOUSEUP);
-	}

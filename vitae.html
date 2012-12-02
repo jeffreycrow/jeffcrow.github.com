@@ -1,14 +1,206 @@
 ---
 title: 'Curriculum Vitae'
 layout: default
+
+education:
+  - name: The University of Texas at Austin School of Information
+    url: http://www.ischool.utexas.edu
+    location: Austin, TX
+    degree:
+      - name: Doctorate in Information Studies
+        date: 2009 – Present
+      - name: Masters of Science in Information Studies
+        date: 2007 – 2009
+  - name: Boston University
+    url: http://www.bu.edu
+    location: Boston, MA
+    degree:
+      - name: Bachelor of Arts in History
+        date: 2003-2005
+
+jobs:
+  - title: Teaching and Research Assistant
+    company: 
+        name: School of Information, The University of Texas at Austin
+        url: http://www.ischool.utexas.edu
+    date: January 2008 - present
+    location: Austin, TX
+    description: |
+        Research assistant duties include collaborating with professors on all aspects of research studies, including design, IRB approval, testing, analysis and publication. Collaborated on both lab-based and crowd-sourced studies. Also created both client and server-side web applications in Javascript, PHP and MySQL/PostgreSQL for use in a variety of research projects.
+
+        Teaching assistant duties include planning and executing both graduate and undergraduate classes, collaborating on class design and syllabi, and responding to student concerns.
+
+  - title: UX Research Intern
+    company: 
+        name: Facebook
+        url: http://www.facebook.com
+    date: May 2012 - August 2012
+    location: Menlo Park, CA
+    description: |
+        Responsible for research studies related to various aspects of Facebook Platform. Collaborated on research agenda for Platform. Conducted lab studies and interviews alone and with colleagues. Analyzed and presented results to the appropriate product teams.
+
+skills:
+    - type: User Experience
+      areas:
+        - subtitle: Research
+          description: Lab and field-based user studies (including specialized populations), focus groups, surveys
+        - subtitle: Analysis
+          description: Quantitative and qualitative methods, video/audio coding, documentation/presentation
+        - subtitle: Prototyping
+          description: Wireframing/mockups, rapid prototyping, requirements gathering, user personas and use scenarios
+    - type: Programming
+      areas:
+        - subtitle: Web
+          description: HTML/CSS, Responsive design, PHP, CodeIgniter, JavaScript, jQuery, XML/XSLT
+        - subtitle: Databases/Linked data
+          description: MySQL, PostgreSQL, SQLite, SPARQL
+        - subtitle: Other
+          description: Python
+
+research:
+    - name: Spatial Hypermedia for Visually Impaired (WARP V.I.P.)
+      description: |
+        Much of our understanding of how to navigate information on the web comes from cues found in layout like size, color and position. This research looks at how visually impaired people use and understand this information implicit in the two-dimensional spatial layouts of Web pages when using a one-dimensional speech rendering from a screenreader. Lab studies were conducted with both sighted and visually impaired participants to understand how they interpreted different types of common web page layouts. This data was compared and is being used to design, develop and evaluate an adaptive spatial hypermedia interface for visually impaired people that can allow them to utilize these types of layout cues.
+    - name: The eCommentary Machine (“eComma”)
+      description: |
+        The eCommentary Machine is a web application designed by the Digital Writing & Research Lab that allows students to build and share collaborative commentaries on texts. I conducted a usability evaluation of the entire application. This included developing scenarios of use and lab testing of users on multiple types of texts, as well as real-world observations and focus groups in classrooms where eComma was being used in teaching. The findings were summarized into a set of design recommendations that were incorporated into the upcoming version.
+    - name: Understanding ICT Use by Medical Professionals in Sub-Saharan Africa
+      description: |
+        A combination of research methods meant to provide a broad picture of the state of information and communication technology (ICT) use by healthcare professionals working in Sub-Saharan Africa. A numer of areas were covered, including infrastructure, policy and existing commercial and research applications. First, a comprehensive literature review was conducted on all available research for applicable topics. Then a survey was disseminated among all types of healthcare workers in the region in order to gain a primary source perspective. This project was meant to inform the design of the eMicrobes project, a digital library of infectious disease reference materials.
+    - name: "TIME: Timeline Interactive Multimedia Experience"
+      description: |
+        The TIME project was designed to visualize a timeline of social media about a specific event at close to real time. The system was designed to inform and assist users about current happenings at a large-scale event such as a conference or music festival where many things happen at once. A large multitouch display was mounted into a tilt-angle kiosk frame in order to facilitate standing use by one or more users. The application was designed as a web application composed of a PHP component that fetched data through APIs and archived it into a MySQL database, and a jQuery web component that rendered the data on the timeline. Initial lab evaluations found the touch interface to be very intuitive and enjoyable for the users, who successfully used search and other features.
+
+teaching_experience:
+    - name: "INF 385K: Projects in Human-Computer Interaction"
+      date: Fall 2011, Co-taught with Professor Luis Francisco-Revilla
+      description: |
+        This course covers multiple aspects of Human-Computer Interaction with the end result being group-designed systems that feature some sort of novel interaction. Objectives include including understanding the problem/situation, envisioning a solution, designing and implementing a system, evaluating the solution and presenting the results for publication. All groups for the semester created applications that utilized the Microsoft Kinect. Responsible for assisting students in every aspect of the design process, including formulating personas and scenarios of use, creating mockups and prototypes, and user testing of their applications.
+
+awards:
+    - name: Cultivating Digital Library Faculty Fellowship
+      date: August 2009 – May 2013
+    - name: Graduate Dean’s Prestigious Fellowship Supplement
+      date: June 2009 – May 2010
+    - name: Boston University Dean’s Scholarship
+      date: August 2003 – December 2005
+
+service:
+    - name: Reviewer, 2012 ACM CHI Conference
+      date: May 2012
+    - name: School of Information Information Technology Committee
+      date: August 2010 – May 2011
+    - name: School of Information Faculty Search Committee
+      date: August 2009 – May 2010
+
 ---
-        <div class="main-container page">
-            <section class="page" id="main">
-                <header role="title">
-                    <h1 class="page-title">{{ page.title }}</h1>
-                </header>
-                <section class="page" id="vitae">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor.</p>
-                </section>
-            </section>
-        </div>
+<div class="main-container page">
+    <article>
+        <h1 class="page-title">{{ page.title }}</h1>
+        <section class="vitae" id="education">
+            <header>
+                <h2 class="vitae">Education</h2>
+            </header>
+            {% for school in page.education %}
+                <div class="vitae item block">
+                    <div class="vitae h3 element">
+                        <h3 class="vitae"><a href="{{ school.url }}" target="_blank">{{ school.name }}</a></h3>
+                        <span class="location">{{ school.location }}</span>
+                    </div>
+                        {% for degree in school.degree %}
+                        <div class="vitae position element">
+                            <p class="position">{{ degree.name }}</p>
+                            <span class="date">{{ degree.date }}</span>
+                        </div>
+                        {% endfor %}
+                </div>
+            {% endfor %}
+        </section>
+        <section class="vitae" id="work">
+            <header>
+                <h2 class="vitae">Work Experience</h2>
+            </header>
+            {% for job in page.jobs %}
+            <div class="vitae item block">
+                <div class="vitae element h3">
+                    <h3 class="vitae"><a href="{{ job.company.url }}" target="_blank">{{ job.company.name }}</a></h3>
+                    <span class="location">{{ job.location }}</span>
+                </div>
+                <div class="vitae element position">
+                    <p class="position">{{ job.title }}</p>
+                    <span class="date">{{ job.date }}</span>
+                </div>
+                <p class="description">{{ job.description }}</p>
+            </div>
+            {% endfor %}
+        </section>
+        <section class="vitae" id="skills">
+            <header>
+                <h2 class="vitae">Skills</h2>
+            </header>
+            {% for skill in page.skills %}
+                <div class="vitae item block">
+                    <div class="element h3">
+                    <h3 class="vitae">{{ skill.type }}</h3>
+                </div>
+                {% for area in skill.areas %}
+                    <p class="area"><span class="area title">{{ area.subtitle }}</span>: <span class="area description">{{ area.description }}</span></p>
+                {% endfor %}
+                </div>
+            {% endfor %}
+        </section>
+        <section class="vitae" id="research">
+            <header>
+                <h2 class="vitae">Research</h2>
+            </header>
+            {% for item in page.research %}
+            <div class="vitae item block">
+                <div class="element h3">
+                    <h3>{{ item.name }}</h3>
+                </div>
+                <p class="description">{{ item.description }}</p>
+            </div>
+            {% endfor %}
+        </section>
+        <section class="vitae" id="teaching">
+            <header>
+                <h2 class="vitae">Teaching Experience</h2>
+            </header>
+            {% for class in page.teaching_experience %}
+            <div class="vitae item block">
+                <div class="element h3">
+                    <h3>{{ class.name }}</h3>
+                    <p class="date">{{ class.date }}</p>
+                </div>
+                <p class="description">{{ class.description }}</p>
+            </div>
+            {% endfor %}
+        </section>
+        <section class="vitae" id="awards">
+            <header>
+                <h2 class="vitae">Awards</h2>
+            </header>
+            <div class="vitae award item">
+            {% for award in page.awards %}
+                <div class="element h3">
+                    <h3 class="vitae">{{ award.name }}</h3>
+                    <span class="date">{{ award.date }}</span>
+                </div>
+            {% endfor %}
+            </div>
+        </section>
+        <section class="vitae" id="service">
+            <header>
+                <h2 class="vitae">Academic & Professional Service</h2>
+            </header>
+            <div class="vitae award item">
+            {% for item in page.service %}
+            <div class="element h3">
+                <h3 class="vitae">{{ item.name }}</h3>
+                <span class="date">{{ item.date }}</span>
+            </div>
+            {% endfor %}
+            </div>
+        </section>
+    </article>
+</div>
